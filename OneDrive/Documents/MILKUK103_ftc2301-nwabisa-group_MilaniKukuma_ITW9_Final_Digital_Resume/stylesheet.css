@@ -1,0 +1,108 @@
+*{
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article ads"
+    "footer footer footer";
+  grid-template-rows:600px 2fr 400px;
+  grid-template-columns: 30% 2fr 30%;
+  grid-gap: 0px;
+  height: 100vh;
+  margin: 0;
+  }
+header, footer, article, nav, div {
+  padding: 10px;
+  background: gray;
+}
+#pageHeader {
+  grid-area: header;
+}
+#pageFooter {
+  grid-area: footer;
+}
+#mainArticle { 
+  grid-area: article;      
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+#siteAds { 
+  grid-area: ads; 
+  }
+.Milani
+{
+right: 0%;
+background:url ("Milani.jpg") no-repeat center center/cover;
+height:900px;
+width:100%;
+}
+.English{width: 90%; background-color: #04AA6D;} /* Green */
+.Isixhosa{width: 99%; background-color: #2196F3;} /* Blue */
+.Sesotho {width: 70%; background-color: #f44336;} /* Red */
+
+/* When moving the mouse over the submit button, add a darker navy color */
+input[type=submit]:hover {
+  background-color: navy;
+}
+
+img {
+  border-radius: 50%;
+}
+.flex-container {
+  display:order;
+  background-color: darkolivegreen;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+
+
+/*code for mobile devices smaller than 600px*/
+body { background-color: lightblue; }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/*@media only screen and (min-width: 300px) {
+   body { background-color:blueviolet; }
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+   body { background-color:navy; }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   body { background-color:Dark gray; }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   body { background-color: gray; }
+}
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+/* Styles for mobile screens */
+@media screen and (max-width: 767px) 
+  /* Layout */
+  { body {
+    margin-bottom: 30px;
+  }
+}
